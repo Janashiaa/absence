@@ -1,32 +1,24 @@
-/* Define scrollbar styles */
-/* For Firefox */
-/* Track */
 ::-moz-scrollbar {
     width: 5px;
     background-color: #2c2c2c;
 }
 
-/* Thumb */
 ::-moz-scrollbar-thumb {
     border-radius: 5px;
     background: #706f6f;
 }
 
-/* For WebKit (Chrome, Safari, etc.) */
-/* Track */
 ::-webkit-scrollbar {
     background-color: #2c2c2c;
     width: 5px;
+    height: 200px;
 }
 
-/* Thumb */
 ::-webkit-scrollbar-thumb {
     background: #706f6f;
     border-radius: 5px;
 }
 
-/* Hide scrollbar track in IE and Edge */
-/* Track */
 ::-ms-scrollbar {
     display: none;
 }
@@ -78,6 +70,7 @@ body {
     justify-content: center;
     color: white;
     font-size: x-large;
+    user-select: none;
 }
 
 .void1 {
@@ -303,4 +296,115 @@ body {
     height: 70%;
     border-radius: 20px;
     text-align: center;
+}
+
+@media (max-width: 500px) {
+    .exit_button {
+        margin-left: 10px;
+    }
+
+    .void1 {
+        margin-right: 10px;
+    }
+
+    .workplace {
+        width: 100%;
+        height: 2050px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .multiply_days_backer {
+        width: 80%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .multiply_days_backer_left {
+        width: 100%;
+    }
+
+    .multiply_days_backer_right {
+        width: 100%;
+        margin-top: 15px;
+        font-size: small;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .paid_days_quantity {
+        height: 100%;
+        width: 80%;
+    }
+
+    .announcement_backer,
+    .multiply_days_backer_right {
+        font-size: medium;
+    }
+
+    .month_sector {
+        background-color: #ce9e62;
+        width: 80%;
+        height: 550px;
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+
+    .month_sector_name {
+        font-size: large;
+    }
+
+    .input_3_1,
+    .input_3_2,
+    .input_3_3,
+    .input_3_4,
+    .input_2_1,
+    .input_2_2,
+    .input_2_3,
+    .input_2_4,
+    .input_1_1,
+    .input_1_2,
+    .input_1_3,
+    .input_1_4 {
+        background-color: whitesmoke;
+        width: 100%;
+        height: 60%;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .month_sector_upper {
+        height: 10%;
+        text-align: center;
+    }
+
+    .month_sector_lower {
+        height: 90%;
+    }
+
+    .month_sector_lower_start {
+        background-color: transparent;
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .month_sector_lower_end {
+        background-color: transparent;
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .month_input_backer {
+        width: 80%;
+    }
 }

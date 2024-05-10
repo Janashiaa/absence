@@ -101,3 +101,9 @@ body {
 .sick_selection:hover {
     transform: scale(0.96);
 }
+
+@media (max-width: 500px) {
+    .choose_card {
+        width: 80%;
+    }
+}
