@@ -1,0 +1,306 @@
+/* Define scrollbar styles */
+/* For Firefox */
+/* Track */
+::-moz-scrollbar {
+    width: 5px;
+    background-color: #2c2c2c;
+}
+
+/* Thumb */
+::-moz-scrollbar-thumb {
+    border-radius: 5px;
+    background: #706f6f;
+}
+
+/* For WebKit (Chrome, Safari, etc.) */
+/* Track */
+::-webkit-scrollbar {
+    background-color: #2c2c2c;
+    width: 5px;
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+    background: #706f6f;
+    border-radius: 5px;
+}
+
+/* Hide scrollbar track in IE and Edge */
+/* Track */
+::-ms-scrollbar {
+    display: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-color: #2c2c2c;
+    overflow-y: scroll;
+    scrollbar-width: fixed;
+}
+
+.navbar {
+    background-color: #2c2c2c;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.exit_button {
+    background-color: #4b6777;
+    width: 100px;
+    height: 60%;
+    border-radius: 20px;
+    margin-left: 30px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.web_name {
+    background-color: transparent;
+    width: 300px;
+    height: 100%;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: x-large;
+}
+
+.void1 {
+    background-color: transparent;
+    width: 100px;
+    height: 60%;
+    margin-right: 30px;
+}
+
+.exit_button:hover {
+    background-color: #658090;
+}
+
+.workplace {
+    background-color: transparent;
+    width: 80%;
+    height: 1150px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 220px;
+}
+
+.result_card {
+    background-color: #ce9e62;
+    width: 80%;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.announcement_backer {
+    background-color: transparent;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.multiply_days_backer {
+    background-color: transparent;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.multiply_days_backer_left {
+    background-color: transparent;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.paid_days_quantity {
+    background-color: whitesmoke;
+    width: 70%;
+    height: 60%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.multiply_days_backer_right {
+    background-color: transparent;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: left;
+    font-size: x-large;
+}
+
+.calculate_card {
+    background-color: #ce9e62;
+    width: 80%;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculate_button {
+    background-color: #9e363a;
+    width: 180px;
+    height: 30px;
+    border-radius: 20px;
+    color: whitesmoke;
+    transition: ease 0.2s;
+}
+
+.calculate_button:hover {
+    background-color: #a84a4e;
+    transform: scale(0.98);
+}
+
+.month_sector {
+    background-color: #ce9e62;
+    width: 80%;
+    height: 250px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.month_sector_upper {
+    background-color: transparent;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.month_sector_name {
+    background-color: transparent;
+    margin-left: 20px;
+    font-size: x-large;
+    color: #9e363a;
+}
+
+.month_sector_lower {
+    background-color: transparent;
+    width: 100%;
+    height: 70%;
+}
+
+.month_sector_lower_start {
+    background-color: transparent;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.month_sector_lower_end {
+    background-color: transparent;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.month_input_backer {
+    background-color: transparent;
+    width: 50%;
+    height: 100%;
+}
+
+.month_input_backer_name {
+    background-color: transparent;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input_name {
+    background-color: transparent;
+    width: 100%;
+    height: 50%;
+    color: black;
+    text-align: center;
+}
+
+.input_description {
+    background-color: transparent;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    color: black;
+    font-size: small;
+}
+
+.input_description_red {
+    background-color: transparent;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    color: red;
+    font-size: small;
+}
+
+.month_actual_input_backer {
+    background-color: transparent;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_3_1,
+.input_3_2,
+.input_3_3,
+.input_3_4,
+.input_2_1,
+.input_2_2,
+.input_2_3,
+.input_2_4,
+.input_1_1,
+.input_1_2,
+.input_1_3,
+.input_1_4 {
+    background-color: whitesmoke;
+    width: 80%;
+    height: 70%;
+    border-radius: 20px;
+    text-align: center;
+}

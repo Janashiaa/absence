@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Vacation Days</title>
+    <link rel="stylesheet" href="vacaStyle.css">
+    <script src="vacaScript.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <button class="exit_button" onclick="exit()">exit</button>
+        <div class="web_name">by Janashia</div>
+        <div class="void1"></div>
+    </div>
+    <div class="workplace">
+        <div class="result_card">
+            <div class="announcement_backer">
+                You will get&nbsp;<span class="span1"></span>₾&nbsp;NET for each day.
+            </div>
+            <div class="multiply_days_backer">
+                <div class="multiply_days_backer_left">
+                    <input type="number" class="paid_days_quantity" placeholder="How many paid vacation days do you have?">
+                </div>
+                <div class="multiply_days_backer_right">
+                    You will get&nbsp;<span class="span2"></span>₾&nbsp;NET for&nbsp;<span class="span3"></span>&nbsp;days
+                </div>
+            </div>
+        </div>
+        <div class="calculate_card">
+            <button class="calculate_button" onclick="startCalculation()">Confirm all and calculate</button>
+        </div>
+        <div class="month_sector">
+            <div class="month_sector_upper">
+                <div class="month_sector_name">Write your results 3 months ago here:</div>
+            </div>
+            <div class="month_sector_lower">
+                <div class="month_sector_lower_start">
+                    <div class="month_input_backer">
+                        <div class="month_input_backer_name">
+                            <div class="input_name">Your Salary</div>
+                            <div class="input_description_red">non-holiday salary + holiday salary + night salary (All gross!)</div>
+                        </div>
+                        <div class="month_actual_input_backer">
+                            <input type="number" class="input_3_1" placeholder="salary">
+                        </div>
+                    </div>
+                    <div class="month_input_backer">
+                        <div class="month_input_backer_name">
+                            <div class="input_name">Working Hours</div>
+                            <div class="input_description">Only working hours. (total for overtime section on tts "month")</div>
+                        </div>
+                        <div class="month_actual_input_backer">
+                            <input type="number" class="input_3_2" placeholder="hours">
+                        </div>
+                    </div>
+                </div>
+                <div class="month_sector_lower_end">
+                    <div class="month_input_backer">
+                        <div class="month_input_backer_name">
+                            <div class="input_name">Month Limit (days)</div>
+                            <div class="input_description">Enter here, how many days was limit to work. (Limit hours devide by 8)</div>
+                        </div>
+                        <div class="month_actual_input_backer">
+                            <input type="number" class="input_3_3" placeholder="day limit">
+                        </div>
+                    </div>
+                    <div class="month_input_backer">
+                        <div class="month_input_backer_name">
+                            <div class="input_name">Justified Absence Days</div>
+                            <div class="input_description">How many !workdays! were you absent. (Approved leave on tts)</div>
+                        </div>
+                        <div class="month_actual_input_backer">
+                            <input type="number" class="input_3_4" placeholder="absence">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="month_sector">
+            <div class="month_sector_upper">
+                <div class="month_sector_name">Write your results 2 months ago here:</div>
+            </div>
+            <div class="month_sector_lower">
+                <div class="month_sector_lower_start">
+                    <div class="month_input_backer">
+                        <div class="month_input_backer_name">
+                            <div class="input_name">Your Salary</div>
+                            <div class="input_description_red">non-holiday salary + holiday salary + night salary (All gross!)</div>
+                        </div>
+                        <div class="month_actual_input_backer">
+                            <input type="number" class="input_2_1" placeholder="salary">
+                        </div>
+                    </div>
+                    <div class="month_input_backer">
+                        <div class="month_input_backer_name">
+                            <div class="input_name">Working Hours</div>
+                            <div class="input_description">Only working hours. (total for overtime section on tts "month")</div>
+                        </div>
+                        <div class="month_actual_input_backer">
+                            <input type="number" class="input_2_2" placeholder="hours">
+                        </div>
+                    </div>
+                </div>
+                <div class="month_sector_lower_end">
+                    <div class="month_input_backer">
+                        <div class="month_input_backer_name">
+                            <div class="input_name">Month Limit (days)</div>
+                            <div class="input_description">Enter here, how many days was limit to work. (Limit hours devide by 8)</div>
+                        </div>
+                        <div class="month_actual_input_backer">
+                            <input type="number" class="input_2_3" placeholder="day limit">
+                        </div>
+                    </div>
+                    <div class="month_input_backer">
+                        <div class="month_input_backer_name">
+                            <div class="input_name">Justified Absence Days</div>
+                            <div class="input_description">How many !workdays! were you absent. (Approved leave on tts)</div>
+                        </div>
+                        <div class="month_actual_input_backer">
+                            <input type="number" class="input_2_4" placeholder="absence">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="month_sector">
+            <div class="month_sector_upper">
+                <div class="month_sector_name">Write your results 1 months ago here:</div>
+            </div>
+            <div class="month_sector_lower">
+                <div class="month_sector_lower_start">
+                    <div class="month_input_backer">
+                        <div class="month_input_backer_name">
+                            <div class="input_name">Your Salary</div>
+                            <div class="input_description_red">non-holiday salary + holiday salary + night salary (All gross!)</div>
+                        </div>
+                        <div class="month_actual_input_backer">
+                            <input type="number" class="input_1_1" placeholder="salary">
+                        </div>
+                    </div>
+                    <div class="month_input_backer">
+                        <div class="month_input_backer_name">
+                            <div class="input_name">Working Hours</div>
+                            <div class="input_description">Only working hours. (total for overtime section on tts "month")</div>
+                        </div>
+                        <div class="month_actual_input_backer">
+                            <input type="number" class="input_1_2" placeholder="hours">
+                        </div>
+                    </div>
+                </div>
+                <div class="month_sector_lower_end">
+                    <div class="month_input_backer">
+                        <div class="month_input_backer_name">
+                            <div class="input_name">Month Limit (days)</div>
+                            <div class="input_description">Enter here, how many days was limit to work. (Limit hours devide by 8)</div>
+                        </div>
+                        <div class="month_actual_input_backer">
+                            <input type="number" class="input_1_3" placeholder="day limit">
+                        </div>
+                    </div>
+                    <div class="month_input_backer">
+                        <div class="month_input_backer_name">
+                            <div class="input_name">Justified Absence Days</div>
+                            <div class="input_description">How many !workdays! were you absent. (Approved leave on tts)</div>
+                        </div>
+                        <div class="month_actual_input_backer">
+                            <input type="number" class="input_1_4" placeholder="absence">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* Deep rusted red: #c1432e */
+/* Silver head-dress: #4b6777 */
+/* Rusted Gold: #ce9e62 */
+/* Black for Contrast: #2c2c2c */
+
+
+/* Blue Popsicle: #0f2862 */
+/* Redline: #9e363a */
+/* Purple Shadow: #091f36 */
+/* Grey Blue Leaf: #4f5f76 */
+
+/* French Laundry Blue: #3a4660 */
+/* Comfortably Tan: #c9af98 */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c2c2c;
+}
+
+/* Define scrollbar styles */
+/* For Firefox */
+/* Track */
+::-moz-scrollbar {
+    width: 10px;
+}
+
+/* Thumb */
+::-moz-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* For WebKit (Chrome, Safari, etc.) */
+/* Track */
+::-webkit-scrollbar {
+    background: #888;
+    width: 10px;
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Hide scrollbar track in IE and Edge */
+/* Track */
+::-ms-scrollbar {
+    display: none;
+}
+
+.choose_card {
+    background-color: #4f5f76;
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card_name {
+    background-color: transparent;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    user-select: none;
+}
+
+.vacation_selection,
+.sick_selection {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0;
+    transition: ease 0.2s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.vacation_selection:hover,
+.sick_selection:hover {
+    transform: scale(0.96);
+}
